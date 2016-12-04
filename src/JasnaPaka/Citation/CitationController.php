@@ -62,7 +62,7 @@ class CitationController
 	private function processError($code, $msg, $statusCode = 500)
 	{
 		$content = file_get_contents(DIR_ROOT."/template/error.xml");
-		$content = str_replace("%CODE%", XMLUtils::removeInvalidXMLChars($code), $content);
+		$content = str_replace("%CODE%", $code, $content);
 		$content = str_replace("%MSG%", XMLUtils::removeInvalidXMLChars($msg), $content);
 
 		$this->printOutput($statusCode, $content);
