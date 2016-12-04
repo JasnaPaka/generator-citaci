@@ -1,0 +1,27 @@
+{
+  "name": "jasnapaka/generator_citaci",
+  "description": "Generátor citací dle ISBN.",
+  "minimum-stability": "stable",
+  "license": "MPL",
+  "authors": [
+    {
+      "name": "Pavel Cvrček",
+      "email": "jasnapaka@jasnapaka.com"
+    }
+  ],
+  "repositories": [
+    {
+      "url": "https://github.com/JasnaPaka/novak.git",
+      "type": "git"
+    }
+  ],
+  "require": {
+    "phpdocumentor/phpdocumentor": "v2.9.0",
+    "jasnapaka/novak": "dev-master"
+  },
+  "autoload": {
+    "psr-0": {
+      "Novak": "vendor/jasnapaka/novak/src/"
+    }
+  }
+}
