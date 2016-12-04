@@ -33,7 +33,7 @@ class CitationController
 		$service = new ISBNService();
 		$result = $service->getCitationFromISBN($isbn);
 		if ($result === false) {
-			//$this->processError(CitationError::ERROR_CODE_4, CitationError::ERROR_CODE_4_MSG);
+			$this->processError(CitationError::ERROR_CODE_4, CitationError::ERROR_CODE_4_MSG);
 			return;
 		}
 
